@@ -1,0 +1,13 @@
+Resources:
+  
+  VPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/28
+      EnableDnsHostnames: 'true'
+      EnableDnsSupport: 'true'
+      InstanceTenancy: default
+      Tags:
+        - Key: name
+          Value: bitcoin-vpc
+
